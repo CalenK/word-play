@@ -6,8 +6,9 @@ window.addEventListener("load", function() {
     const pElement = document.createElement("p");
     line.forEach(speak => {
       const speech = Array.from(speak);
-      speech.reverse().join("-");
-      pElement.append(speech);
+      //let reverseArr = speech.toReversed();
+      //let joinArr = reverseArr.join(",");
+      pElement.append(reverseArr);
     });
     document.body.append(pElement);
   }
